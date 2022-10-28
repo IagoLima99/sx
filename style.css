@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    /* width: 100%; */
+    overflow-x: hidden;
+    
+}
+
+header {
+    width: 40%;
+    margin: 30px 0px 0px 70px;
+}
+
+.head {
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+.head > h2 {
+    
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3C184E;
+} 
+
+#main {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.main-text {
+    font-family: 'Merriweather';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    width: 1100px;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 80px;
+    color: #3C184E;
+}
+
+.main-text > img {
+    width: 260px;
+}
+
+p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+}
+
+.photo {
+    width: 600px;
+}
+.photo-mobile{
+    display: none;
+
+}.photo-mobile > img{
+    display: flex;
+    width: 100%;
+    
+}
+
+.btns {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.btn1 {
+    width: 139px;
+    height: 43px;
+    background: #713FFF;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    .photo {
+        display: none;
+    }
+
+    .photo-mobile{
+        display: block;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 80px;
+    }
+
+    .head > h2 {
+        font-family: 'Rubik';
+        font-style: normal;font-weight: 500px;font-size: 22px;line-height: 21px;
+    }
+
+    .main-text{
+        padding-right: 50px;
+        font-weight: 900;
+        font-size: 39px;
+        line-height: 45px;
+        gap: 5px;
+        display: flex;
+        text-align: center;
+    }
+
+    .main-text > img {
+        padding-top: 5px;
+        width: 190px;
+        transform: rotate(2.15deg);
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px;
+    }
+
+    .btn2 {
+        padding-right: 190px;
+    }
+
+  }
